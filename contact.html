@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+
+    Author: Jeremy St Pierre #301540695 
+
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafioso Pizza</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul id="navbar">
+            <div><li class="bodoni"><a href="index.html">Home</a></li></div>
+            <div><li class="bodoni"><a href="about.html">About</a></li></div>
+            <div><li class="bodoni dropdown"><a href="#">Menu</a>
+                <ul class="dropdown-content">
+                    <li class="dropdown-link"><a href="menulist.html">Menu List</a></li>
+                    <li class="dropdown-link"><a href="order.html">Order Now</a></li>
+                    <li class="dropdown-link"><a href="#">Calendar</a></li>                
+                </ul>
+            </li></div>
+            <div><li class="bodoni"><a href="location.html">Location</a></li></div>
+            <div><li class="bodoni"><a href="contact.html">Contact Us</a></li></div>
+            <div><li class="bodoni"><a href="sitemap.html">Sitemap</a></li></div>
+        </ul>
+    </nav>
+    <main>
+        <section id="contact">
+            <div>
+            <h1 class="bodoni dr">Get in touch</h1>
+            <p>Drop us a line here</p>
+                <form action="#">
+                    <label for="name">Name:</label><br />
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email address:</label><br />
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label><br />
+                    <textarea name="message" id="message"></textarea><br />
+                    <input type="submit" class="submit-button" value="Submit">
+                </form>
+            </div>
+            <img class="spice" src="images/postcard.jpeg">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Jeremy St Pierre for COMP125</p>
+    </footer>
+</body>
+</html>

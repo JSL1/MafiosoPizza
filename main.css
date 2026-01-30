@@ -1,0 +1,292 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bodoni {
+  font-family: "Bodoni Moda", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.dr {
+    color:#280905;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100px;
+    margin: 0px auto;
+    border-bottom: 1px solid #280905;
+}
+
+#navbar {
+    list-style-type: none;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-size: 24px;
+}
+
+#navbar a {
+    color: #740A03;
+    text-decoration: none;
+    size: 24px;
+}
+
+#navbar a:hover {
+    text-decoration: underline;
+    margin: 0px auto;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: #FFF;
+    color: #280905;
+    list-style-type: none;
+    width: 300%;
+}
+
+.dropdown-content li {
+    padding: 8px;
+}
+.dropdown-li:hover {
+    background-color: #DBDBDB
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+}
+
+header {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    height: 800px;
+    background-image: url("images/pizza.jpg");
+    background-size: cover;
+
+}
+
+header h1 {
+font-size: 64px;
+}
+
+#header-inner{
+    margin: 0px auto;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,229,229,0.5);
+    color: #280905;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-inner button {
+    background: none;
+    color:#280905;
+    border: 2px solid #280905;
+    margin: 0px auto;
+    padding: 16px;
+    text-align: center;
+
+}
+
+#statement {
+    width: 900px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#statement div {
+    width: 50%;
+}
+#statement img {
+    border-radius: 50%;
+}
+
+#reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DBDBDB;
+    height:500px;
+}
+
+#reviews div {
+    width: 300px;
+}
+
+#reviews span {
+    font-size: 24px;
+    font-style: italic;
+}
+
+#reviews b {
+    font-style: none;
+    font-weight: bold;
+}
+
+#pizzaman, #location, #contact {
+    margin: 0px auto;
+    padding: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#pizzaman div, #location div, #contact div {
+    width: 50%;
+    margin: 0px auto;
+}
+.spice{
+    width: 35%;
+    border: 1px solid #280905;
+    box-shadow: 10px 10px 8px rgba(40, 9, 5, 0.5);
+}
+
+#location {
+    text-align: center;
+}
+
+input {
+    width: 800px;
+    padding: 8px;
+    background-color: #DBDBDB;
+    border: none;
+    display: block;
+}
+
+textarea {
+    width: 800px;
+    height: 400px;
+    padding: 8px;
+    background-color: #DBDBDB;
+    border: none;
+}
+
+.submit-button {
+    background: none;
+    border: 1px solid #280905;
+    padding: 8px;
+    width: 200px;
+}
+
+label {
+    color:#280905;
+    font-size:12px;
+}
+
+footer {
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#orderform {
+    width: 1200px;
+    margin: 32px auto;
+
+}
+
+.order-row {
+    display: flex;
+    flex-direction: row;
+    color: #280905;
+    padding: 12px;
+    justify-content: space-between;
+}
+
+.order-column1 {
+    width: 50%;
+}
+
+.order-column2, .order-column3 {
+    width: 25%;
+}
+
+.even {
+    background-color: #DBDBDB;
+}
+h1 {
+    text-align: center;
+}
+.add-button {
+    border: 1px solid #740A03;
+    color:#740A03;
+    padding: 4px;
+    background: none;
+}
+.add-button:hover {
+    box-shadow: 2px 2px 2px #280905;
+}
+
+.add-button:active {
+    background-color: #280905;
+}
+.order-item {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#total {
+    text-decoration: underline;
+    color: #740A03;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0px auto;
+    justify-content: space-around;
+}
+
+.menu-card {
+    margin: 32px 32px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 8px 8px 8px rgba(40, 9, 5, 0.5);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.menu-card p, .menu-card span {
+    margin: 0px auto;
+    width: 80%;
+    padding: 4px;
+    background-color: #E6501B;
+}
+
+.menu-price {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+#sitemap, #credits {
+    font-size: 1.4em;
+    width: 1200px;
+    margin: 0px auto;
+}
