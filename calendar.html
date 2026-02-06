@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet">
-    <script type='text/javascript' src="order.js">
+    <script type='text/javascript' src="calendar.js">
     </script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <ul class="dropdown-content">
                     <li class="dropdown-link"><a href="menulist.html">Menu List</a></li>
                     <li class="dropdown-link"><a href="order.html">Order Now</a></li>
-                    <li class="dropdown-link"><a href="#">Calendar</a></li>                
+                    <li class="dropdown-link"><a href="calendar.html">Calendar</a></li>                
                 </ul>
             </li></div>
             <div><li class="bodoni"><a href="location.html">Location</a></li></div>
@@ -30,11 +30,15 @@
     </nav>
     <main>
         <section id="calendar">
-        
+            <h1 id="month-name" class="bodoni dr"></h1>
         </section>
     </main>
+    <footer>
+        <p>&copy; 2026 Jeremy St Pierre for COMP125</p>
+    </footer>
 </body>
 <script type="text/javascript">
+    populateCalendar(1);
 </script>
 </html>
 <!-- 

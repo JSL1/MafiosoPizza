@@ -290,3 +290,41 @@ h1 {
     width: 1200px;
     margin: 0px auto;
 }
+
+/* calendar css BEGINS HERE */
+#month-name {
+    color: #740A03;
+}
+#calendar {
+    width: 1200px;
+    margin: 32px auto;
+    height: 800px;
+}
+
+.week {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;    
+}
+
+.day {
+    width: 15%;
+    height: 100%;
+    border: 1px solid #280905;
+    display: flex;
+    flex-direction: column;
+}
+
+.date-header {
+    color:#740A03;
+    font-style: italic;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.cal-order {
+    margin: auto auto;
+    text-align: center;
+    font-size: 0.8em;
+}

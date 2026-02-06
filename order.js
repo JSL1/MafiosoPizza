@@ -11,14 +11,14 @@ var menuItems = [
         id: 1,
         name: "Margherita Pizza",
         price: 19.99,
-        image: "images/marg.jpeg",
+        image: "images/marg.jpg",
         description: "A classic neapolitan style pizza! Fresh basil!"
     },
     {
         id: 2,
         name: "Hawaian Pizza",
         price: 22.99,
-        image: "images/hawaiian.jpeg",
+        image: "images/hawaiian.jpg",
         description: "Sweet and yummy. Surf's up!"
     },
     {
@@ -32,14 +32,14 @@ var menuItems = [
         id: 4,
         name: "The Godfather",
         price: 32.99,
-        image: "images/godfather.jpeg",
+        image: "images/godfather.jpg",
         description: "A Pizza you can't refuse! Provolone, salami and that prosciutto!"
     },
     {
         id: 5,
         name: "The Angry Meat Lovers Pizza, aka the Tony",
         price: 48.99,
-        image: "images/tony.jpeg",
+        image: "images/tony.jpg",
         description: "Spicy sausage, SPICY pepperoni and HOT pepperoncini! This ones HOT!"
     },
     {
