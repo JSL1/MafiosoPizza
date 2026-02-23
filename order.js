@@ -140,27 +140,5 @@ function updateTotals() {
     totalDisplay.textContent = "Total: $" + calculatetotal().toFixed(2);
 }
 
-//populating the Menu, the one with images and stuff
-function populateMenu() {
-    let menuPage = document.getElementById("menu");
-    for (let i = 0; i < menuItems.length; i++) {
-        let menuCard = document.createElement("div");
-        menuCard.classList.add("menu-card");
-        menuPage.appendChild(menuCard);
-        menuCard.style.backgroundImage = `url("${menuItems[i].image}")`;
-        let title = document.createElement("span");
-        menuCard.appendChild(title);
-        title.classList.add("bodoni");
-        title.classList.add("dr");
-        title.textContent = menuItems[i].name;
-        let para = document.createElement("p");
-        menuCard.appendChild(para);
-        para.textContent = menuItems[i].description;
-        let pr = document.createElement("span");
-        menuCard.appendChild(pr);
-        pr.classList.add("menu-price");
-        pr.textContent = "$" + menuItems[i].price;
-    }
-}
-
 //Author: Jeremy St Pierre #301540695
+*
