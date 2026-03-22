@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    
+    Author: Jeremy St Pierre #301540695
+
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet">
+    <style type="text/css">
+    body {
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden;
+    }
+    .bodoni {
+        font-family: "Bodoni Moda", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .dr {
+        color:#280905;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 20px auto;
+    }
+    input {
+        width: 300px;
+        padding: 6px;
+        border: 1px solid #280905;
+        border-radius: 4px;
+        margin: 4px auto;
+    }
+    label, input {
+        display: block;
+        margin: 0px auto;
+    }
+    footer {
+        height: 3rem;
+        position: relative;
+        bottom: 0px;
+        width: 100vw;
+        text-align: center;
+        background-color: gray;
+    }
+    header {
+        width: 100vw;
+        height: 200px;
+        background: url('pizzafive.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    #errors {
+        font-size: 0.8em;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    select {
+        width: 80px;
+        padding: 12px;
+    }
+    label {
+        font-size: 0.8em;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    .cour {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #buttons {
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+    #buttons input, button {
+        width: 100px;
+        padding: 12px;
+        background-color: aliceblue;
+        color:#280905;
+        border: 1px solid #280905;
+        margin: 8px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <span class="cour">Members only section</span>
+    <h1 class="bodoni dr">Member Registration</h1>
+    <h2 class="bodoni dr">Please complete all the fields below.</h2>
+    <span id="errors"></span>
+    <form id="form">
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" />
+        </div>
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" />
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" />
+        </div>
+        <div>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" />
+        </div>
+        <div>
+            <label for="postalcode">Postal Code:</label>
+            <input type="text" id="postalcode" name="postalcode" />
+        </div>
+        <div>
+        <label for="province">Province:</label>
+            <select name="province" id="province">
+                <option>QC</option>
+                <option>ON</option>
+                <option>MN</option>
+                <option>SK</option>
+                <option>AB</option>
+                <option>BC</option>
+            </select>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" min='18' />
+        </div>
+            <label for="password">Password:</label>
+            <input type="password" id="password1" name="password1"/>
+        <div>
+            <label for="password2">Confirm Password:</label>
+            <input type="password" id="password2" name="password2"/>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div id="buttons">
+            <button type="button" id="submit">Register Now</button>
+            <input type="reset" value="Clear form" id="clear" />
+        </div>
+    </form>
+    <footer>
+        <p>&copy; 2026 Jeremy St Pierre #301540695 for COMP125</p>
+    </footer>
+</body>
+<script type="text/javascript" src="assignment4.js" defer >
+</script>
+</html>
