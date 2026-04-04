@@ -13,6 +13,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,500;1,6..96,500&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="location.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVkHH0AhlLqdV0o2F8Le1vH7_XVbjojoI&callback=initMap" defer>
+    </script>
+    
 </head>
 <body>
     <nav>
@@ -34,11 +38,13 @@
     </nav>
     <main>
         <section id="location">
-            <img class="spice" src="images/pizzeria.jpeg">
             <div>
                 <h1 class="bodoni dr">Located in Little Italy, in the heart of downtown Hill Lake</h1>
                 <h2>1122 Gambini Blvd, Hill Lakes ON. N7G1B2</h2>
-                <img src="images/address.JPG" />
+                <div id="map-container"></div>
+                <div id="route-box"></div><br />
+                <div id="route-box-2"></div><br />
+                <div id="rotue-box-3"></div><br />
             </div>
         </section>
     </main>
@@ -47,3 +53,4 @@
     </footer>
 </body>
 </html>
+<!-- AIzaSyCVkHH0AhlLqdV0o2F8Le1vH7_XVbjojoI -->

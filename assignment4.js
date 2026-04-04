@@ -1,6 +1,7 @@
 //    Author: Jeremy St Pierre #301540695
 
 //all form elements
+const form = document.getElementById("form");
 const submitButton = document.getElementById("submit");
 const clearButton = document.getElementById("clear");
 const fname = document.getElementById("firstname");
@@ -83,12 +84,25 @@ function checkAge() {
     }
 }
 
+function getValues() {
+    let formData = new FormData(form);
+    let inputString = "";
+    for (let [key, value] of formData.entries()) {
+        inputString += (key + "=" + value + ";");
+        document.cookie = (key + "=" + value + ";");
+    }
+    return inputString;
+}
+
 function validateForm() {
     if (![fname.value, lname.value, addr.value, city.value, postal.value, province.value, age.value, password1.value, password2.value, email.value].includes('')) {
         if ([checkAge(), checkPostal(), checkEmail(), checkProvince(), checkPasswords()].includes(false)) {
             alert('Please fill the form properly!!')    
         } else {
-            alert('Thank you for registering, your customer record was created succesfully.');
+            errorString.innerHTML += 'Thank you for Registering! <br />';
+            document.cookie = getValues();
+            localStorage.setItem("signup", getValues());
+            errorString.innerHTML = 'Form values provided: ' + getValues();
         }
     } else {
         let msg = document.createElement('p');
